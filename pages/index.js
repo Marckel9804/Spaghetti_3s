@@ -1,11 +1,17 @@
 import React from 'react';
-import Head from 'next/head';
+import { Input } from 'antd';
 import AppLayout from '../components/AppLayout';
 
+const { Search } = Input;
+
 const Home = () => {
+  const searchBook = (value) => {
+    console.log(value);
+  };
+
   return (
     <AppLayout>
-      <div>Hello, Next!</div>
+      <Search placeholder="책 제목" onSearch={searchBook} enterButton />
     </AppLayout>
   );
 };
