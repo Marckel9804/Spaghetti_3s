@@ -9,10 +9,12 @@ const AppLayout = ({ children }) => {
     <Layout>
       <Header>
         <Link href="/">
-          <a>홈</a>
+          <a>홈이동</a>
         </Link>
       </Header>
-      <Content>{children}</Content>
+      <Content>
+        <div className="content">{children}</div>
+      </Content>
       <Footer>Footer</Footer>
     </Layout>
   );
